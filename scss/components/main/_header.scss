@@ -29,6 +29,12 @@
         margin-right: auto;
     }
 
+    &__logo {
+        cursor: pointer;
+        z-index: 1;
+        @extend %logo-action;
+    }
+
     &__secondary {
         height: auto;
         background: none;

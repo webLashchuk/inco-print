@@ -1,18 +1,23 @@
 @include('components/main/_head.html', {
-    "pageTitle": "Печать"
+    "pageTitle": "Главная страница"
 })
 
 @include('components/main/_header.html', {
-    "pageHeader": "header__secondary",
-    "printActive": "menu__link--active"
+    "pageHeader": "header__main"
 })
 
-<main class="main main--secondary-bg">
+<main class="main main--main-bg">
 
+    @include('components/main/_hero.html')
+    
+    @include('components/main/_portfolio.html')
+    
+    @include('components/main/_features.html')
+    
+    @include('components/main/_partners.html')
+    
     @include('components/main/_callback.html')
-
-    @include('components/print/_print.html')
-
+    
 </main>
 
 @include('components/main/_footer.html')

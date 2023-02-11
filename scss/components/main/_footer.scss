@@ -54,6 +54,7 @@
 
     &__logo {
         filter: invert(58%) sepia(50%) saturate(553%) hue-rotate(146deg) brightness(93%) contrast(84%);
+        @extend %logo-action;
     }
 
     &__logo img {
